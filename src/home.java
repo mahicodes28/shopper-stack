@@ -30,9 +30,7 @@ public class Home {
                 8
         );
 
-        System.out.println("=================================");
         System.out.println("     WELCOME TO SHOPPER STACK");
-        System.out.println("=================================");
 
         p1.displayProduct();
         p2.displayProduct();

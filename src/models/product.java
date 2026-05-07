@@ -4,16 +4,12 @@ public class Product {
 
     private String id;
     private String name;
-    private String description;
     private double price;
-    private int stockQuantity;
 
-    public Product(String id, String name, String description, double price, int stockQuantity) {
+    public Product(String id, String name, double price) {
         this.id = id;
         this.name = name;
-        this.description = description;
         this.price = price;
-        this.stockQuantity = stockQuantity;
     }
 
     public String getId() {
@@ -24,24 +20,11 @@ public class Product {
         return name;
     }
 
-    public String getDescription() {
-        return description;
-    }
-
     public double getPrice() {
         return price;
     }
 
-    public int getStockQuantity() {
-        return stockQuantity;
-    }
-
     public void displayProduct() {
-        System.out.println("ID: " + id);
-        System.out.println("Name: " + name);
-        System.out.println("Description: " + description);
-        System.out.println("Price: ₹" + price);
-        System.out.println("Stock: " + stockQuantity);
-
+        System.out.println(id + " | " + name + " | ₹" + price);
     }
 }
